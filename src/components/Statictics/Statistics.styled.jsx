@@ -22,5 +22,5 @@ font-size: ${p => p.theme.fontSizes.l};
 export const RezultContainer = styled.div`
 font-size: ${p => p.theme.fontSizes.l};
 font-weight: ${p => p.theme.fontWeights.bold};
-color: ${p => p.theme.colors.primary};
+color: ${p => p.theme.colors.black};
 `

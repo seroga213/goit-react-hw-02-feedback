@@ -6,12 +6,11 @@ import { StatisticsTitle, StatisticsCard } from '../Statictics/Statistics.styled
 import { Notification } from 'components/Notification/Notification';
 
 export class Feedback extends React.Component{
-    state = {
+    state = { 
         good: 0,
         neutral: 0,
         bad: 0
-    }
-
+    }  
     handleIncrement = (e) => {
 
         let curentfeedback = e.currentTarget.name;
@@ -49,10 +48,11 @@ export class Feedback extends React.Component{
                         ? <Notification message="There is no feedback"></Notification>
                         : <Statistics
                             ValueGood={this.state.good}
-                            ValueNatuer={this.state.neutral}
+                            ValueNeutral={this.state.neutral}
                             ValueBad={this.state.bad}
                             totalFeedback={this.countTotalFeedback()}
-                            percentage={this.countPositiveFeedbackPercentage()}>
+                            percentage={this.countPositiveFeedbackPercentage()}  
+                            >
                         </Statistics>}
                 
                 </StatisticsCard>

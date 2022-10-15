@@ -16,5 +16,5 @@ cursor: pointer;
 font-size: ${p => p.theme.fontSizes.l};
 border-radius: ${p => p.theme.radii.normal};
 padding: ${p => p.theme.space[2]}px;
-background-color: ${p => p.theme.colors.accent};
+background-color: ${p => p.theme.colors.white};
 `
