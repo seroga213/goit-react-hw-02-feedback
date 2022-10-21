@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Container, ContainerListBtm, ContainerList } from './FeedbackList.styled';
+import { Container, ContainerListBtm, ContainerList } from './FeedbackOptions.styled';
 
 export const FeedbackList = ({ options, addFeedback }) => {
     

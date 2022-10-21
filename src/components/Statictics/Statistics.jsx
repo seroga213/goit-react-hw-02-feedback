@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 
 
-export const Statistics = ({ValueGood, ValueNeutral, ValueBad, totalFeedback, percentage  }) => {
+export const Statistics = ({good, neutral, bad, totalFeedback, percentage  }) => {
     return (
             <li>
                     <StatisticsFeedback>
-                        <StatisticsValue>Good: {ValueGood}</StatisticsValue>
-                        <StatisticsValue>Neutral: {ValueNeutral}</StatisticsValue>
-                        <StatisticsValue>Bad: {ValueBad}</StatisticsValue>
+                        <StatisticsValue>Good: {good}</StatisticsValue>
+                        <StatisticsValue>Neutral: {neutral}</StatisticsValue>
+                        <StatisticsValue>Bad: {bad}</StatisticsValue>
                     </StatisticsFeedback>
                     <RezultContainer>
                         <p>Total: {totalFeedback}</p>
