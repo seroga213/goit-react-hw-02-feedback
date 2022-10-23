@@ -23,9 +23,9 @@ export const Statistics = ({good, neutral, bad, totalFeedback, percentage  }) =>
 }
 
 Statistics.propTypes = {
-    ValueGood: PropTypes.number.isRequired,
-    ValueNeutral: PropTypes.number.isRequired,
-    ValueBad: PropTypes.number.isRequired,
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
     totalFeedback: PropTypes.number.isRequired,
     percentage: PropTypes.number.isRequired
     

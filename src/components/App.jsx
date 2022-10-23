@@ -1,10 +1,11 @@
 import React from "react";
-import { FeedbackList } from "./FeedbackOptions/FeedbackOptions";
-import { Title, Section} from './Section/Section.styled';
+import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
+// import { styled } from '../components/App.styled';
 import { Statistics } from '../components/Statictics/Statistics';
 import { StatisticsTitle, StatisticsCard } from '../components/Statictics/Statistics.styled';
 import { Notification } from 'components/Notification/Notification';
-import { Section } from "./Section/Section";
+import { Section } from './Section/Section';
+
 
 export class Feedback extends React.Component{
     state = { 
@@ -45,13 +46,13 @@ export class Feedback extends React.Component{
                 color: '#010101'
               }}
             >
-        <Section>
-                <Title> Please leave feedback </Title>
+        <Section title = "Please leave feedback">
+                {/* <Title> Please leave feedback </Title> */}
                 <FeedbackOptions
                     options = {Object.keys(this.state)}
                     addFeedback ={this.handleIncrement}
                 ></FeedbackOptions>
-
+    
 <StatisticsCard>
                     <StatisticsTitle>Statistics</StatisticsTitle>
                     {totalFeedback === 0

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { Container, ContainerListBtm, ContainerList } from './FeedbackOptions.styled';
 
-export const FeedbackList = ({ options, addFeedback }) => {
+export const FeedbackOptions = ({ options, addFeedback }) => {
     
     return (
         <Container>
@@ -16,7 +16,7 @@ export const FeedbackList = ({ options, addFeedback }) => {
     )
 }
 
-FeedbackList.propTypes = {
+FeedbackOptions.propTypes = {
     options: PropTypes.arrayOf(PropTypes.string.isRequired),
     addFeedback: PropTypes.func.isRequired,
 }
