@@ -1,10 +1,9 @@
 import React from "react";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
-// import { styled } from '../components/App.styled';
 import { Statistics } from '../components/Statictics/Statistics';
 import { StatisticsTitle, StatisticsCard } from '../components/Statictics/Statistics.styled';
 import { Notification } from 'components/Notification/Notification';
-import { Section } from './Section/Section';
+import  Section  from './Section/Section';
 
 
 export class Feedback extends React.Component{
@@ -47,7 +46,7 @@ export class Feedback extends React.Component{
               }}
             >
         <Section title = "Please leave feedback">
-                {/* <Title> Please leave feedback </Title> */}
+                 {/* <Title> Please leave feedback </Title>  */}
                 <FeedbackOptions
                     options = {Object.keys(this.state)}
                     addFeedback ={this.handleIncrement}
