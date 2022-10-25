@@ -52,7 +52,7 @@ export class Feedback extends React.Component{
                     addFeedback ={this.handleIncrement}
                 ></FeedbackOptions>
     
-        <Section>
+      
                     <StatisticsTitle>Statistics</StatisticsTitle>
 
                     {totalFeedback === 0
@@ -67,7 +67,7 @@ export class Feedback extends React.Component{
                         </Statistics>}
                 
                 </Section>
-        </Section>
+        
         </div>
     )}
 }
