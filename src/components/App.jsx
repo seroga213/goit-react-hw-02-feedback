@@ -1,7 +1,7 @@
 import React from "react";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from '../components/Statictics/Statistics';
-import { StatisticsTitle } from '../components/Statictics/Statistics.styled';
+// import { StatisticsTitle } from '../components/Statictics/Statistics.styled';
 import { Notification } from 'components/Notification/Notification';
 import  Section  from './Section/Section';
 
@@ -38,12 +38,14 @@ export class Feedback extends React.Component{
         let totalFeedback = this.countTotalFeedback();
         return (
           <div
-                style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                fontSize: 40,
-                color: '#010101'
+          style={{
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            fontSize: 20,
+            color: '#010101'
+
               }}
             >
         <Section title = "Please leave feedback">
@@ -52,9 +54,10 @@ export class Feedback extends React.Component{
                     addFeedback ={this.handleIncrement}
                 ></FeedbackOptions>
     
-      
-                    <StatisticsTitle>Statistics</StatisticsTitle>
+        </Section>
 
+        <Section title = "Statistics" >
+            
                     {totalFeedback === 0
                         ? <Notification message="There is no feedback"></Notification>
                         : <Statistics

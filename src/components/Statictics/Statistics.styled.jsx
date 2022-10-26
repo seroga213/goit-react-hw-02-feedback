@@ -4,11 +4,12 @@ export const StatisticsCard = styled.div`
 text-align: center;
 `
 
-export const StatisticsTitle = styled.p`
-margin-bottom: ${p => p.theme.space[4]}px;
-font-size: ${p => p.theme.fontSizes.xl};
-font-weight: ${p => p.theme.fontWeights.bold};
-`
+// export const StatisticsTitle = styled.p`
+// margin-bottom: ${p => p.theme.space[4]}px;
+// font-size: ${p => p.theme.fontSizes.xl};
+// font-weight: ${p => p.theme.fontWeights.bold};
+
+// `
 export const StatisticsValue = styled.span`
 `
 
